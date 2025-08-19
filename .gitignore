@@ -1,0 +1,5 @@
+.env
+.venv/
+__pycache__/
+frontpart/node_modules/
+data/properties.csv

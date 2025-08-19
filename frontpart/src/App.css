@@ -1,0 +1,80 @@
+body, html {
+
+    background-color: #1e1e1e;
+}
+.app-container {
+  max-width: 100%;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background: #1e1e1e;
+  color: rgb(77, 82, 74);
+}
+
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #2c2c2c;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+
+.message {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  max-width: 75%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+.message.user {
+  background-color: #15266a;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+  color: white;
+
+}
+
+.message.bot {
+  background-color: #e2f7dc;
+  text-align: left;
+  margin-right: auto;
+}
+
+.input-form {
+  display: flex;
+  gap: 10px;
+}
+
+.input-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #49494b;
+  color: white;
+}
+
+.input-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #374a61;
+  color: rgb(61, 252, 252);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
