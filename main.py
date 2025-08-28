@@ -33,7 +33,7 @@ async def query_handler(request: Request):
             "cypher": None,
             "result": [],
             "error": None,
-            "message": "❗Please enter a valid question."
+            "message": "Please enter a valid question."
         }
 
     greetings = [
@@ -45,7 +45,7 @@ async def query_handler(request: Request):
             "cypher": None,
             "result": [],
             "error": None,
-            "message": "👋 Hi! What can I help you find in the database?"
+            "message": "Hi! What can I help you find in the database?"
         }
 
     try:
@@ -58,7 +58,7 @@ async def query_handler(request: Request):
                 "cypher": cypher,
                 "result": [],
                 "error": None,
-               "message": "❌ Couldn't understand your query.\n👋 Try asking something like: Show me all properties in Mumbai."
+               "message": "Couldn't understand your query.\n Try asking something | Show me all properties in Mumbai."
             }
 
         result = execute_query(cypher)
@@ -69,5 +69,5 @@ async def query_handler(request: Request):
             "cypher": None,
             "result": [],
             "error": str(e),
-            "message": "🚨 Something went wrong while processing your request."
+            "message": "Something went wrong while processing your request."
         }
